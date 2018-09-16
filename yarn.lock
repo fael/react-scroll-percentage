@@ -8,6 +8,12 @@
   dependencies:
     "@babel/highlight" "7.0.0-beta.44"
 
+"@babel/code-frame@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
+  dependencies:
+    "@babel/highlight" "^7.0.0"
+
 "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.36.tgz#2349d7ec04b3a06945ae173280ef8579b63728e4"
@@ -15,12 +21,6 @@
     chalk "^2.0.0"
     esutils "^2.0.2"
     js-tokens "^3.0.0"
-
-"@babel/code-frame@^7.0.0-beta.47":
-  version "7.0.0-beta.47"
-  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.47.tgz#d18c2f4c4ba8d093a2bcfab5616593bfe2441a27"
-  dependencies:
-    "@babel/highlight" "7.0.0-beta.47"
 
 "@babel/generator@7.0.0-beta.44":
   version "7.0.0-beta.44"
@@ -60,13 +60,13 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@babel/highlight@7.0.0-beta.47":
-  version "7.0.0-beta.47"
-  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0-beta.47.tgz#8fbc83fb2a21f0bd2b95cdbeb238cf9689cad494"
+"@babel/highlight@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0.tgz#f710c38c8d458e6dd9a201afb637fcb781ce99e4"
   dependencies:
     chalk "^2.0.0"
     esutils "^2.0.2"
-    js-tokens "^3.0.0"
+    js-tokens "^4.0.0"
 
 "@babel/template@7.0.0-beta.44":
   version "7.0.0-beta.44"
@@ -2366,7 +2366,7 @@ commander@2.12.x, commander@^2.11.0, commander@^2.9.0, commander@~2.12.1:
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 
-commander@2.15.x, commander@^2.14.1, commander@^2.15.0, commander@~2.15.0:
+commander@2.15.x, commander@^2.14.1, commander@^2.15.0:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
 
@@ -2377,6 +2377,10 @@ commander@2.6.0:
 commander@~2.13.0:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
+
+commander@~2.17.1:
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
 common-tags@^1.7.2:
   version "1.7.2"
@@ -3823,9 +3827,9 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
-flow-bin@^0.75.0:
-  version "0.75.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.75.0.tgz#b96d1ee99d3b446a3226be66b4013224ce9df260"
+flow-bin@^0.78.0:
+  version "0.78.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.78.0.tgz#df9fe7f9c9a2dfaff39083949fe2d831b41627b7"
 
 flow-copy-source@^2.0.0:
   version "2.0.0"
@@ -5293,6 +5297,10 @@ js-base64@^2.1.9:
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
+
+js-tokens@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
 
 js-yaml@^3.11.0:
   version "3.12.0"
@@ -7831,12 +7839,14 @@ rollup-plugin-replace@^2.0.0:
     minimatch "^3.0.2"
     rollup-pluginutils "^2.0.1"
 
-rollup-plugin-uglify@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-uglify/-/rollup-plugin-uglify-4.0.0.tgz#6eb471738f1ce9ba7d9d4bc43b71cba02417c8fb"
+rollup-plugin-uglify@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-uglify/-/rollup-plugin-uglify-6.0.0.tgz#15aa8919e5cdc63b7cfc9319c781788b40084ce4"
   dependencies:
-    "@babel/code-frame" "^7.0.0-beta.47"
-    uglify-js "^3.3.25"
+    "@babel/code-frame" "^7.0.0"
+    jest-worker "^23.2.0"
+    serialize-javascript "^1.5.0"
+    uglify-js "^3.4.9"
 
 rollup-pluginutils@^1.5.0:
   version "1.5.2"
@@ -7852,9 +7862,9 @@ rollup-pluginutils@^2.0.1:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
 
-rollup@^0.62.0:
-  version "0.62.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.62.0.tgz#4ca8b3c9582195dc9341ff8a1375f58319b95bfc"
+rollup@^0.64.0:
+  version "0.64.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.64.1.tgz#9188ee368e5fcd43ffbc00ec414e72eeb5de87ba"
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "*"
@@ -7986,6 +7996,10 @@ send@0.16.2:
 serialize-javascript@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.4.0.tgz#7c958514db6ac2443a8abc062dc9f7886a7f6005"
+
+serialize-javascript@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.5.0.tgz#1aa336162c88a890ddad5384baebc93a655161fe"
 
 serve-favicon@^2.4.5:
   version "2.4.5"
@@ -8729,11 +8743,11 @@ uglify-js@^2.6, uglify-js@^2.8.29:
   optionalDependencies:
     uglify-to-browserify "~1.0.0"
 
-uglify-js@^3.3.25:
-  version "3.3.26"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.3.26.tgz#858b74e5e7262e876c834b907a5fa57d4fa0d525"
+uglify-js@^3.4.9:
+  version "3.4.9"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.9.tgz#af02f180c1207d76432e473ed24a28f4a782bae3"
   dependencies:
-    commander "~2.15.0"
+    commander "~2.17.1"
     source-map "~0.6.1"
 
 uglify-to-browserify@~1.0.0:
